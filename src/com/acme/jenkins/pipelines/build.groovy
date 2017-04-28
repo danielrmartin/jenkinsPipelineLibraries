@@ -1,4 +1,4 @@
-package com.acme.jenkins.pipeline.build
+package com.acme.jenkins.pipeline;
 class Build{
 def Maven(pomLocation, mvnTarget, mvnOptions)
 {
