@@ -1,5 +1,6 @@
 package com.acme;
 class Build{
+@NonCPS
 def Maven(pomLocation, mvnTarget, mvnOptions)
 {
 sh "echo call maven with these arguments $pomLocation $mvnTarget $mvnOptions"
