@@ -8,7 +8,7 @@ def call(String name) {
 	stage('Test '+name)
 	{
 	sh "echo Testing env $name"
-	sleep time: 2,duration: 'MINUTES'
+	sleep time: 2, unit: 'MINUTES'
 	}
 	}//end lock
 }
