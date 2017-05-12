@@ -6,6 +6,7 @@ def call(String name) {
 	stage('post deployment test')
 	{
 	sh "echo Testing env $name"
+	sleep unit:2,duration:'MINUTES'
 	}
 	}//end lock
 }
