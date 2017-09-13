@@ -13,7 +13,6 @@ pipeline {
     }
     stage('test') {
       steps {
-        libraryResource 'common'
         sh 'echo hello'
       }
     }
