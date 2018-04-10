@@ -1,5 +1,5 @@
 def call(String Config)
 {
-  def config = readYaml file:'config.yml'
+  def config = readYaml file: Config
   return config
 }
