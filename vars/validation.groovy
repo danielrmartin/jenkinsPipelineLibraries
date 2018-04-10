@@ -1,4 +1,4 @@
-def call(Name){
+def call(Config String){
 echo "Checking config.txt"
 def config = readYaml file:Name
 Java_Version=config.tools.Java
