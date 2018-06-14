@@ -1,12 +1,8 @@
-package com.acme;
-class Build{
-@NonCPS
-def Maven(pomLocation, mvnTarget, mvnOptions)
-{
-sh "echo call maven with these arguments $pomLocation $mvnTarget $mvnOptions"
-}
-def nodejs (arg1, arg2, agr3)
-{
- sh "echo these are my variables  $arg1 $arg2 $arg3"
-}
+package com.acme
+class Build implements Serializable {
+  def steps
+  Utilities(steps) {this.steps = steps}
+  def mvn(args) {
+    steps.sh "${steps.tool 'Maven'}/bin/mvn -o ${args}"
+  }
 }
