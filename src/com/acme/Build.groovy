@@ -1,4 +1,5 @@
-package com.acme
+package com.acme;
+
 class Build implements Serializable {
   def steps
   Utilities(steps) {this.steps = steps}
